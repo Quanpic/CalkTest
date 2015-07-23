@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <form name="Calc">
+            <input type="text" name="Numbers" style="border: 1px solid black" class="form"><br>
+            <input type="button" value="1" class="num" onclick="document.Calc.Numbers.value += '1'">
+            <input type="button" value="2" class="num" onclick="document.Calc.Numbers.value += '2'">
+            <input type="button" value="3" class="num" onclick="document.Calc.Numbers.value += '3'"><br>
+            <input type="button" value="4" class="num" onclick="document.Calc.Numbers.value += '4'">
+            <input type="button" value="5" class="num" onclick="document.Calc.Numbers.value += '5'">
+            <input type="button" value="6" class="num" onclick="document.Calc.Numbers.value += '6'"><br>
+            <input type="button" value="7" class="num" onclick="document.Calc.Numbers.value += '7'">
+            <input type="button" value="8" class="num" onclick="document.Calc.Numbers.value += '8'">
+            <input type="button" value="9" class="num" onclick="document.Calc.Numbers.value += '9'"><br>
+            <input type="button" style="margin-top: 15px" value="+" class="num" onclick="document.Calc.Numbers.value += ' + '">
+            <input type="button" style="margin-top: 15px" value="-" class="num" onclick="document.Calc.Numbers.value += ' - '">
+            <input type="button" style="margin-top: 15px" value="*" class="num" onclick="document.Calc.Numbers.value += ' * '"><br>
+            <input type="button" value="/" class="num" onclick="document.Calc.Numbers.value += ' / '">
+            <input type="button" value="=" class="num" onclick="document.Calc.Numbers.value = eval(Calc.Numbers.value)">
+            <input type="button" value="C" class="num" onclick="document.Calc.Numbers.value = ''"><br>
+            <input type="button" value="0" class="num" onclick="document.Calc.Numbers.value += '0'">
+        </form>
+    </div>
+    
+    <script src="common.js"></script>
+    <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+</body>
+</html>
